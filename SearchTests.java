@@ -4,7 +4,7 @@ public class SearchTests {
     void successfulSearchTest() {
         open("https://www.google.com/");
         $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=search]").shouldHave(text("https://ru.selenide.org"));
+        $("[id=search]").shouldHave(text("https://ru.selenide.org!!!"));
     }
     //коммент
 }
